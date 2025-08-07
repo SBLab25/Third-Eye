@@ -21,9 +21,9 @@ from pydub import playback
 import pydub 
 
 wake_word = 'jarvis'
-groq_client = Groq(api_key='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')
-genai.configure(api_key='AIzaSyChJH-G0i6epq3Px_UzVOnDWN4GJbjSyrU')
-# openai_client = OpenAI(api_key='AIzaSyChJH-G0i6epq3Px_UzVOnDWN4GJbjSyrU')
+groq_client = Groq(api_key='Enter your Secret API Key here')
+genai.configure(api_key='Enter your Secret API Key here')
+# openai_client = OpenAI(api_key='Enter your Secret API Key here')
 web_cam = cv2.VideoCapture(0)
 
 r = sr.Recognizer()
@@ -222,5 +222,6 @@ def extract_prompt(transcribed_text, wake_word):
         return prompt
     else:
         return None
+
 
 start_listening()
